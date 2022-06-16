@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/images/favicon.ico" rel="shortcut icon"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/about.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/cart.css">
+    <script src="assets/js/style.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <title>Home | GOOD to EAT</title>
+</head>
+
+<body>
+    <nav>
+        <div class="list">
+            <ul class="listleft">
+                <hr><br>
+                <li>
+                    <a href="index.html" class="leftthing">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="leftthing">About</a>
+                </li>
+                <il class="down1">
+                    <div class="dropdown">
+                        <buttom class="dropbtn">
+                            <li><a href="meats.html" class="leftthing">Meats</a></li>
+                        </buttom>
+                        <div class="dropdown-content">
+                            <hr class="downhr"><a href="beef.html">Beef</a>
+                            <hr class="downhr">
+                            <a href="pork.html">Pork</a>
+                            <hr class="downhr">
+                        </div>
+                    </div>
+                </il>
+                <li>
+                    <a href="seafood.html" class="leftthing">Seafood</a>
+                </li>
+                <li>
+                    <a href="findus.html" class="leftthing">Find us</a>
+                </li>
+            </ul>
+            <div class="listright">
+                <table>
+                    <tr>
+                        <button class="rightthing">
+                            <a href="login.html">
+                                <img src="assets/images/user (1).png" class="userimg" width="23px">
+                                &nbsp;Log In
+                            </a>
+                        </button>
+
+                        <button class="rightthing" onclick="opencart()">
+                            <img src="assets/images/shopping-bag.png" width="25px">
+                        </button>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <br>
+        <section>
+            <article>
+                <div class="rwd_slider_container_wrapper">
+                    <div class="rwd_slider_container">
+                        <div class="slider_container">
+                            <div>
+                                <img src="assets/images/background1.png"  alt="pure css slider" class="sliderimg"
+                                    height="820px" />
+                            </div>
+                            <div>
+                                <img src="assets/images/background2.png" alt="pure css slider" class="sliderimg"
+                                    height="820px" />
+                            </div>
+                            <div>
+                                <img src="assets/images/background3.png" alt="pure css slider" class="sliderimg"
+                                    height="820px" />
+                            </div>
+                            <div>
+                                <img src="assets/images/background4.png" alt="pure css slider" class="sliderimg"
+                                    height="820px" />
+                            </div>
+                            <div>
+                                <img src="assets/images/background1.png" alt="pure css slider" class="sliderimg"
+                                    height="820px" />
+                            </div>
+                        </div><!-- end of .pure_slider_container -->
+                    </div><!-- end of .embed-responsive -->
+                </div><!-- end of .embed-responsive-box -->
+            </article>
+
+            <article class="center">
+                <div class="topbg">
+                    <div class="bg-text">
+                        <table class="topbgtable">
+                            <tr>
+                                <td colspan="3" class="topbgtablebigtext">GOOD to EAT</td>
+                            </tr>
+                            <tr>
+                                <td class="topbgtablesmalltext" id="tabletext">Meats and seafood for <br>the gourmet
+                                    in all of us</td>
+                                <td class="topbgtableimg"><img src="assets/images/cow.png" height="105px"></td>
+                                <td class="topbgtablebuttomtext" id="tabletext">
+                                    <a href="meats.html">
+                                        <div class="but">START SHOPING ></div>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </article>
+                
+            <article>
+                <div class="indexttext">
+                    <p>Enjoy Our Special Recommendations</p>
+                </div>
+                <div class="ranking">
+                    <div class="indeximg">
+                        <div class="indexxxx">
+                            <a href="6.html" class="rankinglink">
+                                <div class="rankingblock">
+                                    <img src="assets/images/product/6.jpg" class="rankingimg">
+                                    <div class="rankingtext">【頂級牛排】1855認證 Prime等級羽下牛排<br><br>NT$450</div>
+                                    <div class="rankingtext2"><div class="light">快速瀏覽</div></div>
+                                </div>
+                            </a>
+                            <button id="myBtn1">快速瀏覽</button>
+                            <!-- The Modal -->
+                            <div id="myModal1" class="modal1">
+                                <!-- Modal content -->
+                                <div class="modal-content1">
+                                    <span class="close11">&times;</span>
+                                    <div class="jump">
+                                        <div class="jumpimg">
+                                        
+                                            <img src="assets/images/product/6.jpg">
+                                        </div>
+                                        <div class="jumptext">
+                                            <h1>
+                                                【頂級牛排】1855認證 Prime等級羽下牛排
+                                            </h1>
+                                            <div class="jumpcotent">
+                                                <div class="jumpprice">
+                                                    NT$450
+                                                </div>
+                                                <div class="jumpsize">
+                                                    規格：250g (8.8oz)
+                                                </div>
+                                                <div class="jumpppp">
+                                                    【1855認證】
+                                                    <br>每100頭約只有7頭牛才能獲得此1855認證。1855一樣分為八個等級，而『1855認證』中的等級，又比USDA認證的等級的牛排略勝半籌。
+                                                    <br>【部位介紹】
+                                                    <br>羽下牛排，選自於牛肩胛中"最軟嫩的部位"，口感與無骨牛小排相似。油花豐富、分布均勻，肉中間有少許細筋，肉質香甜有口感，適合煎烤或燒烤，越嚼越香越好吃！
+                                                    <br><br>翼板牛肉(羽下)的油脂呈現大理石紋的分布，因此英文別名就叫做"Marbled Beef", (Marbled的意思是"大理石花紋的")!珍貴且難得。老饕必吃！！ 
+                                                    <br><br>
+                                                    <a href="6.html">瀏覽更多詳細資料</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="indexxxx">
+                            <a href="7.html" class="rankinglink">
+                                <div class="rankingblock">
+                                    <img src="assets/images/product/7.jpg" class="rankingimg">
+                                    <div class="rankingtext">【頂級牛排】1855認證 安格斯頂級肋眼牛排<br><br>NT$760</div>
+                                    <div class="rankingtext2"><div class="light">快速瀏覽</div></div>
+                                </div>
+                            </a>
+                            <button id="myBtn2">快速瀏覽</button>
+                            <!-- The Modal -->
+                            <div id="myModal2" class="modal2">
+                                <!-- Modal content -->
+                                <div class="modal-content2">
+                                    <span class="close22">&times;</span>
+                                    <div class="jump">
+                                        <div class="jumpimg">
+                                        
+                                            <img src="assets/images/product/7.jpg">
+                                        </div>
+                                        <div class="jumptext">
+                                            <h1>
+                                                【頂級牛排】1855認證 安格斯頂級肋眼牛排
+                                            </h1>
+                                            <div class="jumpcotent">
+                                                <div class="jumpprice">
+                                                    NT$760
+                                                </div>
+                                                <div class="jumpsize">
+                                                    規格：294.8g (10.4oz)
+                                                </div>
+                                                <div class="jumpppp">
+                                                    【1855認證】
+                                                    <br>每100頭約只有7頭牛才能獲得此1855認證。1855一樣分為八個等級，而『1855認證』中的等級，又比USDA認證的等級的牛排略勝半籌。
+                                                    <br>【部位介紹】
+                                                    <br>「Rib」是「肋排」的意思，「Ribeye」是從牛肋裡切下來的，中文叫做「肋眼」。肋眼牛排遍滿均勻的大理石油花紋路，香味濃郁迷人。油花分佈較多且均勻，有明顯的牛肉香氣；肉質軟嫩，嫩度僅次於菲力牛排。
+                                                    熟度為五分熟左右最適合；若怕血水可選擇七分熟。
+                                                    <br><br>
+                                                    <a href="7.html">瀏覽更多詳細資料</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="indexxxx">
+                            <a href="18.html" class="rankinglink">
+                                <div class="rankingblock">
+                                    <img src="assets/images/product/18.jpg" class="rankingimg">
+                                    <div class="rankingtext">【日本A5和牛-鹿兒島】頂級燒烤肉片<br><br>NT$680</div>
+                                    <div class="rankingtext2"><div class="light">快速瀏覽</div></div>
+                                </div>
+                            </a>
+                            <button id="myBtn3">快速瀏覽</button>
+                            <!-- The Modal -->
+                            <div id="myModal3" class="modal3">
+                                <!-- Modal content -->
+                                <div class="modal-content3">
+                                    <span class="close33">&times;</span>
+                                    <div class="jump">
+                                        <div class="jumpimg">
+                                        
+                                            <img src="assets/images/product/18.jpg">
+                                        </div>
+                                        <div class="jumptext">
+                                            <h1>
+                                                【日本A5和牛-鹿兒島】頂級燒烤肉片
+                                            </h1>
+                                            <div class="jumpcotent">
+                                                <div class="jumpprice">
+                                                    NT$680
+                                                </div>
+                                                <div class="jumpsize">
+                                                    規格：150g (5.2oz)
+                                                </div>
+                                                <div class="jumpppp">
+                                                    【日本和牛】
+                                                    <br>被譽為世界上等級最高的牛肉，其中等級崇高、又被稱作「肉的藝術品」，每一隻都經過嚴正的管理、細心養育。
+                                                    <br>【鹿兒島和牛】
+                                                    <br>鹿兒島是日本國內最大和牛生產地，是屬於野性最強的和牛風味，位於日本九州最南端的縣市，溫暖氣候、豐富自然美景是最大特色。鹿兒島和牛，肉質鮮紅、脂肪分佈均勻，最大特色是牛肉風味非常濃郁，口感也相對有咬勁。
+                                                    <br><br>
+                                                    日本A5黑毛和牛肉片油花分佈明顯，能同時品嚐到油脂甜味與瘦肉鮮味的稀有部位，是老饕最愛的部位之一
+                                                    <br><br>
+                                                    <a href="18.html">瀏覽更多詳細資料</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <p class="aaa">
+   
+            </p>
+
+        </section>
+    </main>
+    <!--登入/註冊-->
+
+    <div class="modal" id="id01">
+
+        <span onclick="close1()" class="close" title="離開">&times;</span>
+
+        <div class="container1">
+            <div class="tit1">
+                <h1>註冊</h1>
+                <div class="tit11">
+                    <p>已經有帳號了？</p>
+                    <button onclick="hide()"><div class="orig">登入</div></button>
+                </div>
+            </div>
+            <br>
+            <form class="modal-content" action="">
+                <div class="tit2">
+                    <label id="act"><b>帳號</b></label>
+                    <br><br>
+                    <input class="loginput" type="text" name="account" id="useract">
+                    <br><br><br>
+                    <label id="pwd"><b>密碼</b></label>
+                    <br><br>
+                    <input id="userpwd" class="loginput" type="password" name="password">
+                    <br><br>
+                    <label id="name"><b>姓名</b></label>
+                    <br><br>
+                    <input class="loginput" type="text" name="username" id="username">
+                    <br><br>
+                    <label id="mail"><b>Email</b></label>
+                    <br><br>
+                    <input id="usermail" class="loginput" type="text" name="usermail">
+                    <br><br>
+                    <iframe title="reCAPTCHA" class="robot" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Ld0J8IcAAAAANyrnxzrRlX1xrrdXsOmsepUYosy&amp;co=aHR0cHM6Ly9qYWNreTkxNzEud2l4c2l0ZS5jb206NDQz&amp;hl=zh-CN&amp;v=M-QqaF9xk6BpjLH22uHZRhXt&amp;theme=light&amp;size=normal&amp;cb=oczpyoxiikcq" width="304" height="78" role="presentation" name="a-lj5vk0deas4g" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                </div>
+                <div class="clearfix">
+                    <input type="submit" class="signupbtn" value="註冊">
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="modal" id="id02">
+
+        <span onclick="close2()" class="close" title="離開">&times;</span>
+
+        <div class="container">
+            <div class="tit1">
+                <h1>登入</h1>
+                <div class="tit12">
+                    <p>首次造訪本網站？</p>
+                    <button onclick="hide()"><div class="orig">註冊</div></button>
+                </div>
+            </div>
+            <br>
+            <form class="modal-content" action="">
+                <div class="tit2">
+                    <div class="tit3"><label><b>帳號</b></label></div>
+                    <br>
+                    <input class="loginput" type="text" name="account" id="useraccount">
+                    <br><br><br>
+                    <div class="tit3"><label><b>密碼</b></label></div>
+                    <br>
+                    <input class="loginput" type="password" name="password" id="password"><br>
+                    <iframe title="reCAPTCHA" class="robot" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Ld0J8IcAAAAANyrnxzrRlX1xrrdXsOmsepUYosy&amp;co=aHR0cHM6Ly9qYWNreTkxNzEud2l4c2l0ZS5jb206NDQz&amp;hl=zh-CN&amp;v=M-QqaF9xk6BpjLH22uHZRhXt&amp;theme=light&amp;size=normal&amp;cb=oczpyoxiikcq" width="304" height="78" role="presentation" name="a-lj5vk0deas4g" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                </div>
+                <div class="clearfix">
+                    <input type="submit" class="signupbtn" value="登入">
+
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+    
+        <!--購物車-->
+        <div id="myCart" class="sidecart">
+            <div class="carttitle">
+                <a class="closecart" onclick="closecart()">&#8250;</a>
+                <p id="word">購物車</p>
+            </div>
+    
+            <div class="cart">
+    
+                <!--購物車商品框-->
+                <form>
+                    <!--商品1-->
+                    <div class="product">
+                        <div class="cartinside">
+                            <a href=""><img src="assets/images/product/6.jpg" width="90px" /></a>
+                        </div>
+                        <div class="pdt">
+                            <div>
+                                <p>【頂級牛排】1855認證 Prime等級羽下牛排</p>
+                            </div>
+                            <div class="price">
+                                <p>NT$ </p>
+                                <p>450</p>
+                            </div>
+                            <div class="quantity">
+                                <div class="qty">
+    
+                                    <input type="button" class="minus" field="qtynum" value="-" />
+                                    <input type="text" class="num" name="num" value="1" />
+                                    <input type="button" class="add" field="qtynum" value="+" />
+    
+                                </div>
+                            </div>
+                            <br>
+                            <hr>
+                        </div>
+                        <div class="cross">
+                            <a href="#">
+                                <img src="assets/images/cross.jpg" width="10px">
+                            </a>
+                        </div>
+                    </div>
+                    <!--商品2-->
+                    <div class="product">
+                        <div class="cartinside">
+                            <a href=""><img src="assets/images/product/18.jpg" width="90px" /></a>
+                        </div>
+                        <div class="pdt">
+                            <div>
+                                <p>【日本A5和牛-鹿兒島】頂級燒烤肉片</p>
+                            </div>
+                            <div class="price">
+                                <p>NT$ </p>
+                                <p>680</p>
+                            </div>
+                            <div class="quantity">
+                                <div class="qty">
+    
+                                    <input type="button" class="minus" field="qtynum" value="-" />
+                                    <input type="text" class="num" name="num" value="1" />
+                                    <input type="button" class="add" field="qtynum" value="+" />
+    
+                                </div>
+                            </div>
+                            <br>
+                            <hr>
+                        </div>
+                        <div class="cross">
+                            <a href="#">
+                                <img src="assets/images/cross.jpg" width="10px">
+                            </a>
+                        </div>
+                    </div>
+                    <!--商品3-->
+    
+                    
+                    <div class="cart-bottom">
+                        <div class="sum-bottom">
+                            <!--小計-->
+                            <h1>小計：</h1>
+                            <div class="sumPrice">
+                                <h2>NT$</h2>
+                                <h2>1130</h2>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="gopay">
+                             <a href="checkorder.html">前往結帳</a>
+                        </div>
+                    </div>
+                </form>
+    
+            </div>
+    
+        </div>
+    <footer>
+        
+        Copyright<sup>©</sup> 2022 by GOOD to EAT | Viewers：80
+        
+    </footer>
+</body>
+
+</html>
+<!--購物車增減按鈕-->
+<script>
+    var add1 = document.getElementsByClassName("add");
+    //加
+    for (var i = 0; i < add1.length; i++) {
+        //標籤
+        add1[i].index = i;
+        //點擊+1
+        add1[i].onclick = function () {
+
+            var flag = this.index;
+            //當前數量
+            var q = document.getElementsByClassName("num")[flag];
+
+
+            var newvalue = parseInt(q.value) + 1;
+
+            q.setAttribute("value", newvalue);
+
+            changeSum(flag, newvalue);
+
+        }
+    }
+    var minus1 = document.getElementsByClassName("minus");
+    //減
+    for (var j = 0; j < minus1.length; j++) {
+        //標籤
+        minus1[j].index = j;
+        //點擊+1
+        minus1[j].onclick = function () {
+
+            var flag = this.index;
+            //當前數量
+            var q = document.getElementsByClassName("num")[flag];
+
+
+            //1不能再減
+            if (parseInt(q.value) == 1) {
+                q.setAttribute("value", q.value);
+
+            } else {
+
+
+                var newvalue = parseInt(q.value) - 1;
+
+                q.setAttribute("value", newvalue);
+
+
+            }
+
+        }
+    }
+</script>
+
+<!-- 快速瀏覽 -->
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal1");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn1");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close11")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+
+
+
+
+<script>
+    // Get the modal
+    var modal2 = document.getElementById("myModal2");
+    
+    // Get the button that opens the modal
+    var btn2 = document.getElementById("myBtn2");
+    
+    // Get the <span> element that closes the modal
+    var span2 = document.getElementsByClassName("close22")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn2.onclick = function() {
+      modal2.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span2.onclick = function() {
+      modal2.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+    }
+</script>
+
+
+
+<script>
+    // Get the modal
+    var modal3 = document.getElementById("myModal3");
+    
+    // Get the button that opens the modal
+    var btn3 = document.getElementById("myBtn3");
+    
+    // Get the <span> element that closes the modal
+    var span3 = document.getElementsByClassName("close33")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn3.onclick = function() {
+      modal3.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span3.onclick = function() {
+      modal3.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal3) {
+        modal3.style.display = "none";
+      }
+    }
+</script>
+
+
+

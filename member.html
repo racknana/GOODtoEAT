@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/images/favicon.ico" rel="shortcut icon"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/member.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/cart.css">
+    <script src="assets/js/style.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/cart.js"></script>
+
+    <title>Member | GOOD to EAT</title>
+</head>
+
+<body>
+    <nav>
+        <div class="list">
+            <ul class="listleft">
+                <hr><br>
+                <li>
+                    <a href="index.html" class="leftthing">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="leftthing">About</a>
+                </li>
+                <il class="down1">
+                    <div class="dropdown">
+                        <buttom class="dropbtn">
+                            <li><a href="meats.html" class="leftthing">Meats</a></li>
+                        </buttom>
+                        <div class="dropdown-content">
+                            <hr class="downhr"><a href="beef.html">Beef</a>
+                            <hr class="downhr">
+                            <a href="pork.html">Pork</a>
+                            <hr class="downhr">
+                        </div>
+                    </div>
+                </il>
+                <li>
+                    <a href="seafood.html" class="leftthing">Seafood</a>
+                </li>
+                <li>
+                    <a href="findus.html" class="leftthing">Find us</a>
+                </li>
+            </ul>
+            <div class="listright">
+                <table>
+                    <tr>
+                        <button class="rightthing" onclick="login()">
+                            <img src="assets/images/user (1).png" class="userimg" width="23px">
+                            &nbsp;Log In
+                        </button>
+
+                        <button class="rightthing" onclick="opencart()">
+                            <img src="assets/images/shopping-bag.png" width="25px">
+                        </button>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </nav>
+
+    <div class="member">
+        <section class="member-left">
+            <div class="photo">
+                <img src="assets/images/photo.jpg" width="100px" height="100px">
+            </div>
+            <div class="member-buttons">
+                <a href="myorder.html">
+                    <div class="member-but">
+                        My Orders
+                    </div>
+                </a>
+                <a href="member.html">
+                    <div id="thisbut">
+                        My Account
+                    </div>
+                </a>
+                <a href="update.html">
+                    <div class="member-but">
+                        Update Data
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="member-right">
+            <div class="rtl">
+                <div class="member-data">
+                    <h1>我的帳戶</h1>
+                    <p>於下方查看您的個人資訊。</p>
+                    <br>
+                    <hr><br>
+                    <form>
+                        <table class="datatable">
+                            <tr>
+                                <td class="left"><label>帳號</label></td>
+                                <td><label>密碼</label></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><input type="text" class="input-data" value="test"
+                                        readonly="readonly" /></td>
+                                <td><input type="password" class="input-data" value="test@gmail.com"
+                                        readonly="readonly" /></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><label>姓名</label></td>
+                                <td><label>Email</label></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><input type="text" class="input-data" value="測試姓名"
+                                        readonly="readonly" /></td>
+                                <td><input type="text" class="input-data" value="test@gmail.com" readonly="readonly" />
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="button">
+                            <a href="update.html">
+                                <div class="but1">
+                                    修改資料
+                                </div>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--登入/註冊-->
+
+    <div class="modal" id="id01">
+
+        <span onclick="close1()" class="close" title="離開">&times;</span>
+
+        <div class="container1">
+            <div class="tit1">
+                <h1>註冊</h1>
+                <div class="tit11">
+                    <p>已經有帳號了？</p>
+                    <button onclick="hide()"><div class="orig">登入</div></button>
+                </div>
+            </div>
+            <br>
+            <form class="modal-content" action="">
+                <div class="tit2">
+                    <label id="act"><b>帳號</b></label>
+                    <br><br>
+                    <input class="loginput" type="text" name="account" id="useract">
+                    <br><br><br>
+                    <label id="pwd"><b>密碼</b></label>
+                    <br><br>
+                    <input id="userpwd" class="loginput" type="password" name="password">
+                    <br><br>
+                    <label id="name"><b>姓名</b></label>
+                    <br><br>
+                    <input class="loginput" type="text" name="username" id="username">
+                    <br><br>
+                    <label id="mail"><b>Email</b></label>
+                    <br><br>
+                    <input id="usermail" class="loginput" type="text" name="usermail">
+                    <br><br>
+                    <iframe title="reCAPTCHA" class="robot" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Ld0J8IcAAAAANyrnxzrRlX1xrrdXsOmsepUYosy&amp;co=aHR0cHM6Ly9qYWNreTkxNzEud2l4c2l0ZS5jb206NDQz&amp;hl=zh-CN&amp;v=M-QqaF9xk6BpjLH22uHZRhXt&amp;theme=light&amp;size=normal&amp;cb=oczpyoxiikcq" width="304" height="78" role="presentation" name="a-lj5vk0deas4g" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                </div>
+                <div class="clearfix">
+                    <input type="submit" class="signupbtn" value="註冊">
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="modal" id="id02">
+
+        <span onclick="close2()" class="close" title="離開">&times;</span>
+
+        <div class="container">
+            <div class="tit1">
+                <h1>登入</h1>
+                <div class="tit12">
+                    <p>首次造訪本網站？</p>
+                    <button onclick="hide()"><div class="orig">註冊</div></button>
+                </div>
+            </div>
+            <br>
+            <form class="modal-content" action="">
+                <div class="tit2">
+                    <div class="tit3"><label><b>帳號</b></label></div>
+                    <br>
+                    <input class="loginput" type="text" name="account" id="useraccount">
+                    <br><br><br>
+                    <div class="tit3"><label><b>密碼</b></label></div>
+                    <br>
+                    <input class="loginput" type="password" name="password" id="password"><br>
+                    <iframe title="reCAPTCHA" class="robot" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Ld0J8IcAAAAANyrnxzrRlX1xrrdXsOmsepUYosy&amp;co=aHR0cHM6Ly9qYWNreTkxNzEud2l4c2l0ZS5jb206NDQz&amp;hl=zh-CN&amp;v=M-QqaF9xk6BpjLH22uHZRhXt&amp;theme=light&amp;size=normal&amp;cb=oczpyoxiikcq" width="304" height="78" role="presentation" name="a-lj5vk0deas4g" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                </div>
+                <div class="clearfix">
+                    <input type="submit" class="signupbtn" value="登入">
+
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+        <!--購物車-->
+        <div id="myCart" class="sidecart">
+            <div class="carttitle">
+                <a class="closecart" onclick="closecart()">&#8250;</a>
+                <p id="word">購物車</p>
+            </div>
+    
+            <div class="cart">
+    
+                <!--購物車商品框-->
+                <form>
+                    <!--商品1-->
+                    <div class="product">
+                        <div class="cartinside">
+                            <a href=""><img src="assets/images/product/6.jpg" width="90px" /></a>
+                        </div>
+                        <div class="pdt">
+                            <div>
+                                <p>【頂級牛排】1855認證 Prime等級羽下牛排</p>
+                            </div>
+                            <div class="price">
+                                <p>NT$ </p>
+                                <p>450</p>
+                            </div>
+                            <div class="quantity">
+                                <div class="qty">
+    
+                                    <input type="button" class="minus" field="qtynum" value="-" />
+                                    <input type="text" class="num" name="num" value="1" />
+                                    <input type="button" class="add" field="qtynum" value="+" />
+    
+                                </div>
+                            </div>
+                            <br>
+                            <hr>
+                        </div>
+                        <div class="cross">
+                            <a href="#">
+                                <img src="assets/images/cross.jpg" width="10px">
+                            </a>
+                        </div>
+                    </div>
+                    <!--商品2-->
+                    <div class="product">
+                        <div class="cartinside">
+                            <a href=""><img src="assets/images/product/18.jpg" width="90px" /></a>
+                        </div>
+                        <div class="pdt">
+                            <div>
+                                <p>【日本A5和牛-鹿兒島】頂級燒烤肉片</p>
+                            </div>
+                            <div class="price">
+                                <p>NT$ </p>
+                                <p>680</p>
+                            </div>
+                            <div class="quantity">
+                                <div class="qty">
+    
+                                    <input type="button" class="minus" field="qtynum" value="-" />
+                                    <input type="text" class="num" name="num" value="1" />
+                                    <input type="button" class="add" field="qtynum" value="+" />
+    
+                                </div>
+                            </div>
+                            <br>
+                            <hr>
+                        </div>
+                        <div class="cross">
+                            <a href="#">
+                                <img src="assets/images/cross.jpg" width="10px">
+                            </a>
+                        </div>
+                    </div>
+                    <!--商品3-->
+    
+                    
+                    <div class="cart-bottom">
+                        <div class="sum-bottom">
+                            <!--小計-->
+                            <h1>小計：</h1>
+                            <div class="sumPrice">
+                                <h2>NT$</h2>
+                                <h2>1130</h2>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="gopay">
+                             <a href="checkorder.html">前往結帳</a>
+                        </div>
+                    </div>
+                </form>
+    
+            </div>
+    
+        </div>
+    <footer>
+        Copyright<sup>©</sup> 2022 by GOOD to EAT
+    </footer>
+</body>
+
+
+</html>
+<!--購物車增減按鈕-->
+<script>
+    var add1 = document.getElementsByClassName("add");
+    //加
+    for (var i = 0; i < add1.length; i++) {
+        //標籤
+        add1[i].index = i;
+        //點擊+1
+        add1[i].onclick = function () {
+
+            var flag = this.index;
+            //當前數量
+            var q = document.getElementsByClassName("num")[flag];
+
+
+            var newvalue = parseInt(q.value) + 1;
+
+            q.setAttribute("value", newvalue);
+
+            changeSum(flag, newvalue);
+
+        }
+    }
+    var minus1 = document.getElementsByClassName("minus");
+    //減
+    for (var j = 0; j < minus1.length; j++) {
+        //標籤
+        minus1[j].index = j;
+        //點擊+1
+        minus1[j].onclick = function () {
+
+            var flag = this.index;
+            //當前數量
+            var q = document.getElementsByClassName("num")[flag];
+
+
+            //1不能再減
+            if (parseInt(q.value) == 1) {
+                q.setAttribute("value", q.value);
+
+            } else {
+
+
+                var newvalue = parseInt(q.value) - 1;
+
+                q.setAttribute("value", newvalue);
+
+
+            }
+
+        }
+    }
+</script>
