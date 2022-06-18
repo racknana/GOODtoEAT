@@ -223,6 +223,22 @@ a.rightthing:hover {
   transition: 0.5s;
 }
 
+/* 查詢 */
+.search{
+  position: fixed;
+  left: 3%;
+  bottom: 3%;
+  z-index: 500;
+  transition: ease-in 0.5s;
+}
+.search img{
+  width: 80px;
+  height: 80px;
+}
+.search:hover{
+  transform: scale(1.1,1.1);
+  transition: 0.5s;
+}
 
 /* 廣告 */
 .ad {
@@ -1101,7 +1117,6 @@ font-size: 30px;
   
   transition: 0.7s;
 }
-
 
 
 

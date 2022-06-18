@@ -55,10 +55,10 @@
                 <table>
                     <tr>
                         <button class="rightthing">
-                            <a href="login.html">
-                                <img src="assets/images/user (1).png" class="userimg" width="23px">
-                                &nbsp;Log In
-                            </a>
+                            <a href="member.html"><img src="assets/images/user (1).png" class="userimg" width="23px"></a>
+                            <button class="rightthing" onclick="login()">
+                                Log In
+                            </button>
                         </button>
 
                         <button class="rightthing" onclick="">
@@ -84,37 +84,37 @@
                     <!--圖片-->
                     <div class="pdt-name">
                         <div class="pdt-img">
-                            <img src="assets/images/meat.jpg" width="150px">
+                            <img src="assets/images/product/6.jpg" width="150px">
                         </div>
-                        <div>
+                        <div class="pdt-span">
                             <!--品名-->
                             <div class="pdt-title">
                                 <label>
-                                    SMOKED VIRGINIA BACON
+                                    【頂級牛排】1855認證 Prime等級羽下牛排
                                 </label>
                             </div>
                             <!--單個價錢-->
                             <div>
                                 <p>
-                                    NT$13
+                                    NT$450
                                 </p>
                             </div>
                         </div>
                     </div>
                     <!--計數器-->
-                    <div class="quantity">
-                        <div class="qty">
-
-                            <input type="button" class="minus" field="qtynum" value="-" />
-                            <input type="text" class="num" name="num" value="1" />
-                            <input type="button" class="add" field="qtynum" value="+" />
-
+                    <div class="pdt-span1">
+                        <div class="quantity">
+                            <div class="qty">
+                                <input type="button" class="minus" field="qtynum" value="-" />
+                                <input type="text" class="num" name="num" value="1" />
+                                <input type="button" class="add" field="qtynum" value="+" />
+                            </div>
                         </div>
                     </div>
                     <!--小計-->
-                    <div>
+                    <div class="pdt-span1">
                         <p>
-                            NT$75
+                            NT$450
                         </p>
                     </div>
                     <div class="cross">
@@ -132,39 +132,37 @@
                     <!--圖片-->
                     <div class="pdt-name">
                         <div class="pdt-img">
-                            <img src="assets/images/meat.jpg" width="150px">
+                            <img src="assets/images/product/18.jpg" width="150px">
                         </div>
-                        <div>
+                        <div class="pdt-span">
                             <!--品名-->
                             <div class="pdt-title">
                                 <label>
-                                    SMOKED VIRGINIA BACON
+                                    【日本A5和牛-鹿兒島】頂級燒烤肉片&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </label>
                             </div>
                             <!--單個價錢-->
                             <div>
                                 <p>
-                                    NT$13
+                                    NT$680
                                 </p>
                             </div>
                         </div>
                     </div>
                     <!--計數器-->
-
-                    <div class="quantity">
-                        <div class="qty">
-
-                            <input type="button" class="minus" field="qtynum" value="-" />
-                            <input type="text" class="num" name="num" value="1" />
-                            <input type="button" class="add" field="qtynum" value="+" />
-
+                    <div class="pdt-span1">
+                        <div class="quantity">
+                            <div class="qty">
+                                <input type="button" class="minus" field="qtynum" value="-" />
+                                <input type="text" class="num" name="num" value="1" />
+                                <input type="button" class="add" field="qtynum" value="+" />
+                            </div>
                         </div>
                     </div>
-
                     <!--小計-->
-                    <div>
+                    <div class="pdt-span1">
                         <p>
-                            NT$75
+                            NT$680
                         </p>
                     </div>
                     <div class="cross">
@@ -176,51 +174,7 @@
             </div>
             <hr>
             <!--商品3-->
-            <div class="check-pdt">
-                <div class="check-inside">
-                    <!--圖片-->
-                    <div class="pdt-name">
-                        <div class="pdt-img">
-                            <img src="assets/images/meat.jpg" width="150px">
-                        </div>
-                        <div>
-                            <!--品名-->
-                            <div class="pdt-title">
-                                <label>
-                                    SMOKED VIRGINIA BACON
-                                </label>
-                            </div>
-                            <!--單個價錢-->
-                            <div>
-                                <p>
-                                    NT$13
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--計數器-->
-                    <div class="quantity">
-                        <div class="qty">
-
-                            <input type="button" class="minus" field="qtynum" value="-" />
-                            <input type="text" class="num" name="num" value="1" />
-                            <input type="button" class="add" field="qtynum" value="+" />
-
-                        </div>
-                    </div>
-                    <!--小計-->
-                    <div>
-                        <p>
-                            NT$75
-                        </p>
-                    </div>
-                    <div class="cross">
-                        <a href="#">
-                            <img src="assets/images/cross.jpg" width="10px">
-                        </a>
-                    </div>
-                </div>
-            </div>
+            
             <hr>
             <!--商品4-->
             <!--商品5-->
@@ -236,7 +190,7 @@
                 <div class="check-all-pay">
                     <div class="check-all">
                         <p>小計</p>
-                        <p>NT$99</p>
+                        <p>NT$1130</p>
                     </div>
                     <div class="check-all">
                         <p>運費</p>
@@ -249,7 +203,7 @@
                         <p>總計</p>
                     </div>
                     <div>
-                        NT$99
+                        NT$1130
                     </div>
                 </div>
                 <div class="go-pay" id="go-pay" onclick="gopay()">

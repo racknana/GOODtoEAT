@@ -99,6 +99,7 @@
     background-color: transparent;
     border: 1px solid;
     transition: all .35s linear;
+    margin-right: 90px;
 }
 
 .but1:hover {
@@ -144,3 +145,54 @@
     overflow-y: auto;
     
 }
+
+.tpyetext,  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    outline-style: none;
+  }
+  
+  .feedback {
+    background-color: #de705b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    line-height: 12px;
+    
+  
+  }
+  
+  .tpyetext:hover,  textarea:hover{
+      background-color:#f1f1f1;
+  }
+  
+  
+  .feedback:hover {
+    background-color: #e2a194;
+  }
+  
+  .feedbackform{
+    display: flex;
+    justify-content: end;
+    padding-bottom: 40px;
+    position: relative;
+    left: 50%;
+    margin-right: 470px;
+  
+  }
+  .form-feedback{
+    width: 600px;
+  }
+  
+  
+  
+  .feedbackspan{
+    padding: 0px 60px;
+  
+  }
